@@ -3,10 +3,11 @@ import styles from './block.module.scss';
 import classNames from 'classnames';
 import { bool, func } from 'prop-types';
 
-export default Block = ({ withSpacing, children }) =>
+const Block = ({ withSpacing, children, className }) =>
   <div className={classNames({
     [styles.block]: true,
-    [styles.spacings]: withSpacing
+    [styles.spacings]: withSpacing,
+    [className]: true
   })}>
     {children}
   </div>
@@ -19,3 +20,5 @@ Block.propTypes = {
 Block.defaultProps = {
   withSpacing: false
 };
+
+export default Block

@@ -12,7 +12,8 @@
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-remark": "^1.7.23",
     "prop-types": "^15.6.0",
-    "react-flexbox-grid": "^2.0.0"
+    "react-flexbox-grid": "^2.0.0",
+    "react-sticky": "^6.0.1"
   },
   "keywords": [
     "gatsby"

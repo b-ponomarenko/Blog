@@ -1,6 +1,8 @@
 ---
 title: "Sweet Pandas Eating Sweets"
 date: "2017-08-10"
+category: Travel
+image: http://demo.shapedtheme.com/kotha-pro-html/assets/images/post-thumb-3.jpg
 ---
 
 Pandas are really sweet.

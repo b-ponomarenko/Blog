@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid #da521e;
+  color: #da521e;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 18px;
+  transition: all 0.33s;
+  border-radius: 0;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.button:hover, .primary {
+  background: #da521e;
+  color: #fff;
+}

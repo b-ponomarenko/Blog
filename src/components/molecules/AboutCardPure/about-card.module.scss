@@ -1,0 +1,28 @@
+.card {
+  position: relative;
+}
+
+.fullName {
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #444;
+}
+
+.content {
+  padding-top: 70px;
+}
+
+.me {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  max-width: 50%;
+}
