@@ -18,25 +18,27 @@ $operator: #fc929e;
   border-radius: 10px;
   overflow: auto;
   tab-size: 1.5em;
+  color: #fff;
+  margin: 20px 0;
 
   & code {
     font-family: "Operator Mono", source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
   }
-}
 
-.gatsby-highlight code[class*="gatsby-code-"],
-.gatsby-highlight pre[class*="gatsby-code-"],
-.gatsby-highlight pre.prism-code {
+  code[class*="gatsby-code-"],
+  pre[class*="gatsby-code-"],
+  pre.prism-code {
     height: auto !important;
     margin: 1rem;
     font-size: 14px;
     line-height: 20px;
     white-space: pre-wrap;
     word-break: break-word;
-}
-
-.gatsby-highlight + .gatsby-highlight {
-  margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+  }
+  & + .gatsby-highlight {
+  }
 }
 
 .gatsby-highlight-code-line {
@@ -46,99 +48,89 @@ $operator: #fc929e;
   padding: 0.125rem calc(1rem + 15px);
 }
 
-.token.attr-name {
-  color: $keyword;
-}
+.token {
+  &.attr-name {
+    color: $keyword;
+  }
 
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: $comment;
-}
+  &.comment,
+  &.block-comment,
+  &.prolog,
+  &.doctype,
+  &.cdata {
+    color: $comment;
+  }
 
-.token.property,
-.token.number,
-.token.function-name,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: $primitive;
-}
+  &.property,
+  &.number,
+  &.function-name,
+  &.constant,
+  &.symbol,
+  &.deleted {
+    color: $primitive;
+  }
 
-.token.boolean {
-  color: $boolean;
-}
+  &.boolean {
+    color: $boolean;
+  }
 
-.token.tag {
-  color: $tag;
-}
+  &.tag {
+    color: $tag;
+  }
 
-.token.string {
-  color: $string;
-}
+  &.string {
+    color: $string;
+  }
 
-.token.punctuation {
-  color: $punctuation;
-}
+  &.punctuation {
+    color: $punctuation;
+  }
 
-
-
-.token.selector,
-.token.char,
-.token.builtin,
-.token.inserted,
-  {
+  &.selector,
+  &.char,
+  &.builtin,
+  &.inserted {
     color: $char;
-  };
+  }
 
+  &.function {
+    color: $function;
+  }
 
-.token.function, {
-  color: $function;
-}
-
-
-
-.token.operator,
-.token.entity,
-.token.url,
-.token.variable,
-  {
+  &.operator,
+  &.entity,
+  &.url,
+  &.variable {
     color: $variable;
-  };
+  }
 
+  &.attr-value {
+    color: $string;
+  }
 
-.token.attr-value {
-  color: $string;
-}
+  &.keyword {
+    color: $keyword;
+  }
 
-.token.keyword {
-  color: $keyword;
-}
-
-
-
-.token.atrule,
-.token.class-name
-  {
+  &.atrule, &.class-name {
     color: $className;
-  };
+  }
 
+  &.important {
+    font-weight: 400;
+  }
 
-.token.important {
-  font-weight: 400;
-}
+  &.bold {
+    font-weight: 700;
+  }
 
-.token.bold {
-  font-weight: 700;
-}
-.token.italic {
-  font-style: italic;
-}
+  &.italic {
+    font-style: italic;
+  }
 
-.token.entity {
-  cursor: help;
+  &.entity {
+    cursor: help;
+  }
 }
 
 .namespace {
