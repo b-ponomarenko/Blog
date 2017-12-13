@@ -6,7 +6,7 @@ import { string } from 'prop-types';
 const ImageBlockPure = ({ children, image, className }) =>
   <Block className={className}>
     <div className={styles.image}>
-      <img src={image}/>
+      <img src={image} className={styles.image}/>
     </div>
     <div className={styles.spacing}>
       {children}

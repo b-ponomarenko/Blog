@@ -2,7 +2,7 @@ import React from 'react';
 import ImageBlockPure from '../ImageBlockPure/ImageBlockPure';
 import styles from './about-card.module.scss';
 import image from '../../../assets/images/me.jpeg';
-import declOfNum from '../../../declOfNum';
+import declOfNum from '../../../utils/declOfNum';
 
 const birthday = new Date('1995-07-06');
 const years = Math.floor((Date.now() - birthday) / 1000 / 60 / 60 / 24 / 365);

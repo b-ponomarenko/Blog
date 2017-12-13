@@ -6,7 +6,7 @@ import Header from '../components/organisms/Header/Header';
 import '../assets/scss/index.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={ {minHeight: '100vh'} }>
     <Helmet
       title="Gatsby Default Starter"
       meta={[

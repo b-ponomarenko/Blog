@@ -7,7 +7,7 @@ const Button = ({ type, children, onClick }) =>
     type="button"
     className={classNames({
       [styles.button]: true,
-      [styles.type]: true
+      [styles[type]]: true
     })}
     onClick={onClick}
   >

@@ -12,7 +12,14 @@
   background: #fff;
 }
 
-.button:hover, .primary {
+.button:hover, .primary, .secondary {
   background: #da521e;
+  border: 1px solid #da521e;
+  color: #fff;
+}
+
+.secondary {
+  background: #333;
+  border: 1px solid #333;
   color: #fff;
 }
