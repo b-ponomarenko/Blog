@@ -9,8 +9,10 @@
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.14",
+    "gatsby-remark-prismjs": "^1.2.11",
+    "gatsby-remark-responsive-iframe": "^1.4.16",
     "gatsby-source-filesystem": "^1.5.9",
-    "gatsby-transformer-remark": "^1.7.23",
+    "gatsby-transformer-remark": "^1.7.24",
     "prop-types": "^15.6.0",
     "react-flexbox-grid": "^2.0.0",
     "react-sticky": "^6.0.1"
